@@ -1,0 +1,26 @@
+<html>
+   <body>
+      <form action = "http://localhost:5000/result" method = "POST"
+         enctype = "multipart/form-data">
+         <label for="channel">Select input channel: </label>
+         <select name="channel" id="channel">
+             <option value="vocals">Vocals</option>
+             <option value="drums">Drums</option>
+             <option value="bass">Bass</option>
+             <option value="others" selected>Others</option>
+         </select><br>
+         <label for="tone">Select output tone: </label>
+         <select name="tone" id="tone">
+             <option value="violin" selected>Violin</option>
+             <option value="flute">Flute</option>
+             <option value="trumpet">Trumpet</option>
+             <option value="saxophone">Saxophone</option>
+             <option value="sheep">Sheep</option>
+             <option value="human">Human</option>
+         </select><br>
+         <label for="file">Select song audio file:</label>
+         <input id="file" type="file" name="file" /><br>
+         <input type="submit"/>
+      </form>
+   </body>
+</html>
